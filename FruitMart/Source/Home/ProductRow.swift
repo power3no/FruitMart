@@ -16,7 +16,7 @@ struct ProductRow: View {
         .frame(height: 150)
         .background(Color.primary.colorInvert())
         .cornerRadius(6)
-        .shadow(color: Color.primary.opacity(0.33), radius: 1, x: 2, y: 2)
+        .shadow(color: Color.primaryShadow, radius: 1, x: 2, y: 2)
         .padding(.vertical, 8)
     
     }
@@ -38,7 +38,7 @@ private extension ProductRow {
                 .padding(.bottom, 6)
             Text("달콤한 맛이 좋은 과일의 여왕 사과. 독은 없고 꿀만 가득해요!")
                 .font(.footnote)
-                .foregroundColor(.secondary)
+                .foregroundColor(.secondaryText)
             Spacer()
             footerView
         }
@@ -54,10 +54,10 @@ private extension ProductRow {
             
             Image(systemName: "heart")
                 .imageScale(.large)
-                .foregroundColor(Color("peach"))
+                .foregroundColor(Color.peach)
                 .frame(width: 32, height: 32, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             Image(systemName: "cart")
-                .foregroundColor(Color("peach"))
+                .foregroundColor(Color.peach)
                 .frame(width: 32, height: 32, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
     }
