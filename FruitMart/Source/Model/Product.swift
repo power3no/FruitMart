@@ -14,6 +14,7 @@ struct Product {
     let price: Int
     let description: String
     var isFavorite: Bool = false
+    
 }
 extension Product: Decodable {}
 extension Product: Identifiable {}

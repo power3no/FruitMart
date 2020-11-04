@@ -50,7 +50,7 @@ private extension ProductRow {
     }
     var footerView: some View {
         HStack() {
-            Text("¥").font(.footnote)
+            Text("￦").font(.footnote)
                 + Text("\(product.price)").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             
             Spacer()
@@ -68,6 +68,14 @@ private extension ProductRow {
 
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
-        ProductRow(product: productSamples[0])
+//        ProductRow(product: productSamples[0])
+        Group {
+            ForEach(productSamples) {
+                ProductRow(product: $0)
+            }
+            ProductRow(product: productSamples[0])
+                .preferredColorScheme(.dark)
+        }
+        .previewLayout(.sizeThatFits)
     }
 }

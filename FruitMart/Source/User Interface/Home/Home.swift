@@ -26,6 +26,10 @@ struct Home: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Home(store: Store())
+
+        Preview(source: Home(store: Store()))
+//            .previewDevice(PreviewDevice(rawValue: $0))
+//            .previewDisplayName($0)
+
     }
 }
