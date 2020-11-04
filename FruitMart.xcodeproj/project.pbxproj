@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		217AE6C6255249D1002A31C2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AE6C5255249D1002A31C2 /* Store.swift */; };
+		217AE6C9255251A1002A31C2 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AE6C8255251A1002A31C2 /* ProductDetailView.swift */; };
 		218E811E254FC1FB0020DA54 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E811D254FC1FB0020DA54 /* BundleExtension.swift */; };
 		BF348A0F254D69A400B9AF98 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF348A0E254D69A400B9AF98 /* ProductRow.swift */; };
 		BF348A14254D7D6700B9AF98 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF348A13254D7D6700B9AF98 /* ColorExtension.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		217AE6C5255249D1002A31C2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		217AE6C8255251A1002A31C2 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		218E811D254FC1FB0020DA54 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		BF348A0E254D69A400B9AF98 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		BF348A13254D7D6700B9AF98 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				BF65578D254D36CF00804F9F /* Home.swift */,
 				BF348A0E254D69A400B9AF98 /* ProductRow.swift */,
+				217AE6C8255251A1002A31C2 /* ProductDetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				217AE6C6255249D1002A31C2 /* Store.swift in Sources */,
+				217AE6C9255251A1002A31C2 /* ProductDetailView.swift in Sources */,
 				BF65578E254D36CF00804F9F /* Home.swift in Sources */,
 				BF65578C254D36CF00804F9F /* FruitMartApp.swift in Sources */,
 				BF348A1B254D8E6200B9AF98 /* Product.swift in Sources */,
