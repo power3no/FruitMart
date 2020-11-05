@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ProductDetailView: View {
+    @EnvironmentObject private var store: Store
     let product: Product
     @State private var quantity: Int = 1
+    @State private var showingAlert: Bool = false
     
     var body: some View {
         VStack(spacing: 0) {
@@ -17,6 +19,9 @@ struct ProductDetailView: View {
             OrderView
         }
         .edgesIgnoringSafeArea(.top)
+        .alert(isPresented: $showingAlert, content: {
+            confirmAlert
+        })
     }
 }
 
@@ -74,7 +79,9 @@ private extension ProductDetailView {
     }
     
     var placeOrderButton: some View {
-        Button(action: {}) {
+        Button(action: {
+            self.showingAlert = true
+        }) {
             Capsule()
                 .fill(Color.peach)
                 .frame(maxWidth: .infinity, minHeight: 30, maxHeight: 55)
@@ -84,6 +91,19 @@ private extension ProductDetailView {
         }
     }
     
+    var confirmAlert: Alert {
+        Alert(title: Text("주문 확인"),
+              message: Text("\(product.name)을(를) \(quantity)개 구매하겠습니까?"),
+              primaryButton: .default(Text("확인"), action: {
+                self.placeOrder()
+              }),
+              secondaryButton: .cancel(Text("취소")))
+            
+    }
+    
+    func placeOrder() {
+        store.placeOrder(product: product, quantity: quantity)
+    }
     
     func splitText(_ text: String) -> String {
       guard !text.isEmpty else { return text }
