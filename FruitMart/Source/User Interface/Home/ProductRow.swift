@@ -55,10 +55,7 @@ private extension ProductRow {
             
             Spacer()
             
-            Image(systemName: "heart")
-                .imageScale(.large)
-                .foregroundColor(Color.peach)
-                .frame(width: 32, height: 32, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            FavoriteButton(product: product)
             Image(systemName: "cart")
                 .foregroundColor(Color.peach)
                 .frame(width: 32, height: 32, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)

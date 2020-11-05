@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Home: View {
-    let store: Store
+    @EnvironmentObject private var store: Store
     
     var body: some View {
         NavigationView{
@@ -17,7 +17,7 @@ struct Home: View {
                     ProductRow(product: product)
                 }
             }
-            
+            .buttonStyle(PlainButtonStyle())
             
             .navigationTitle("과일마트")
         }
@@ -27,7 +27,8 @@ struct Home: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 
-        Preview(source: Home(store: Store()))
+        Preview(source: Home())
+                    .environmentObject(Store())
 //            .previewDevice(PreviewDevice(rawValue: $0))
 //            .previewDisplayName($0)
 
