@@ -10,6 +10,8 @@ import SwiftUI
 struct QuantitySelector: View {
     @Binding var quantity: Int
     var range: ClosedRange<Int> = 1...20
+    private let softFeedBack = UIImpactFeedbackGenerator(style: .soft)
+    private let rigidFeedBack = UIImpactFeedbackGenerator(style: .rigid)
     
     var body: some View {
         HStack {
@@ -37,6 +39,11 @@ struct QuantitySelector: View {
     private func changeQuantity(_ num: Int) {
         if range ~= quantity + num {
             quantity += num
+            softFeedBack.prepare() // 진동 지연 시간을 줄일 수 있도록 미리 준비
+            softFeedBack.impactOccurred(intensity: 0.8)
+        } else {
+            rigidFeedBack.prepare()
+            rigidFeedBack.impactOccurred()
         }
     }
 }
