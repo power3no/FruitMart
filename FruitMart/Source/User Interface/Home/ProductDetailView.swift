@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProductDetailView: View {
     let product: Product
+    @State private var quantity: Int = 1
     
     var body: some View {
         VStack(spacing: 0) {
@@ -62,11 +63,14 @@ private extension ProductDetailView {
     }
     
     var priceInfo: some View {
-        HStack {
-            (Text("￦") + Text("\(product.price)").font(.title))
+        let price = quantity * product.price
+        
+        return HStack {
+            (Text("￦") + Text("\(price)").font(.title))
                 .fontWeight(.medium)
             
             Spacer()
+            QuantitySelector(quantity: $quantity)
         }
         .foregroundColor(.black)
     }
