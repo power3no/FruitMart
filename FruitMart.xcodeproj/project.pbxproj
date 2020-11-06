@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		213460032555563800C6A5FB /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213460022555563800C6A5FB /* Symbol.swift */; };
 		213460062555582400C6A5FB /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213460052555582400C6A5FB /* ResizedImage.swift */; };
+		2134600A25555E8300C6A5FB /* ShrinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134600925555E8300C6A5FB /* ShrinkButtonStyle.swift */; };
 		217AE6C6255249D1002A31C2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AE6C5255249D1002A31C2 /* Store.swift */; };
 		217AE6C9255251A1002A31C2 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AE6C8255251A1002A31C2 /* ProductDetailView.swift */; };
 		218425E62552CDF00053A8BB /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218425E52552CDF00053A8BB /* Preview.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		213460022555563800C6A5FB /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		213460052555582400C6A5FB /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
+		2134600925555E8300C6A5FB /* ShrinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrinkButtonStyle.swift; sourceTree = "<group>"; };
 		217AE6C5255249D1002A31C2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		217AE6C8255251A1002A31C2 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		218425E52552CDF00053A8BB /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2134600825555E6300C6A5FB /* CustomStyle */ = {
+			isa = PBXGroup;
+			children = (
+				2134600925555E8300C6A5FB /* ShrinkButtonStyle.swift */,
+			);
+			path = CustomStyle;
+			sourceTree = "<group>";
+		};
 		218425E42552CDD90053A8BB /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 		BF348A11254D7D4400B9AF98 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				2134600825555E6300C6A5FB /* CustomStyle */,
 				218425E42552CDD90053A8BB /* CustomView */,
 				BF348A12254D7D4D00B9AF98 /* Extension */,
 			);
@@ -263,6 +274,7 @@
 				21B2C5262553B5E900C6B2DC /* QuantitySelector.swift in Sources */,
 				218425E62552CDF00053A8BB /* Preview.swift in Sources */,
 				21B2C5292553D29500C6B2DC /* FavoriteButton.swift in Sources */,
+				2134600A25555E8300C6A5FB /* ShrinkButtonStyle.swift in Sources */,
 				218E811E254FC1FB0020DA54 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
