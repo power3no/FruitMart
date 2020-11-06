@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213460032555563800C6A5FB /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213460022555563800C6A5FB /* Symbol.swift */; };
+		213460062555582400C6A5FB /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213460052555582400C6A5FB /* ResizedImage.swift */; };
 		217AE6C6255249D1002A31C2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AE6C5255249D1002A31C2 /* Store.swift */; };
 		217AE6C9255251A1002A31C2 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AE6C8255251A1002A31C2 /* ProductDetailView.swift */; };
 		218425E62552CDF00053A8BB /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218425E52552CDF00053A8BB /* Preview.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		213460022555563800C6A5FB /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		213460052555582400C6A5FB /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
 		217AE6C5255249D1002A31C2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		217AE6C8255251A1002A31C2 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		218425E52552CDF00053A8BB /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				218425E52552CDF00053A8BB /* Preview.swift */,
+				213460022555563800C6A5FB /* Symbol.swift */,
+				213460052555582400C6A5FB /* ResizedImage.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -249,8 +255,10 @@
 				BF65578E254D36CF00804F9F /* Home.swift in Sources */,
 				BF65578C254D36CF00804F9F /* FruitMartApp.swift in Sources */,
 				BF348A1B254D8E6200B9AF98 /* Product.swift in Sources */,
+				213460032555563800C6A5FB /* Symbol.swift in Sources */,
 				BF348A0F254D69A400B9AF98 /* ProductRow.swift in Sources */,
 				21B2C52C2553DCDA00C6B2DC /* Order.swift in Sources */,
+				213460062555582400C6A5FB /* ResizedImage.swift in Sources */,
 				BF348A14254D7D6700B9AF98 /* ColorExtension.swift in Sources */,
 				21B2C5262553B5E900C6B2DC /* QuantitySelector.swift in Sources */,
 				218425E62552CDF00053A8BB /* Preview.swift in Sources */,
