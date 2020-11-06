@@ -16,8 +16,7 @@ struct QuantitySelector: View {
     var body: some View {
         HStack {
             Button(action: { changeQuantity(-1) }, label: {
-                Image(systemName: "minus.circle.fill")
-                    .imageScale(.large)
+                Symbol("minus.circle.fill", scale: .large, color: Color.gray.opacity(0.5))
                     .padding()
             })
             .foregroundColor(Color.gray.opacity(0.5))
@@ -28,8 +27,7 @@ struct QuantitySelector: View {
                 .frame(width: 40, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
             Button(action: { self.changeQuantity(1) }, label: {
-                Image(systemName: "plus.circle.fill")
-                    .imageScale(.large)
+                Symbol("plus.circle.fill", scale: .large, color: Color.gray.opacity(0.5))
                     .padding()
             })
             .foregroundColor(Color.gray.opacity(0.5))
