@@ -12,11 +12,15 @@ struct ProductDetailView: View {
     let product: Product
     @State private var quantity: Int = 1
     @State private var showingAlert: Bool = false
+    @State private var showingPopup: Bool = false
     
     var body: some View {
         VStack(spacing: 0) {
             productImage
             OrderView
+        }
+        .popup(isPresented: $showingPopup){
+            OrderCompletedMessage()
         }
         .edgesIgnoringSafeArea(.top)
         .alert(isPresented: $showingAlert, content: {
@@ -102,6 +106,7 @@ private extension ProductDetailView {
     
     func placeOrder() {
         store.placeOrder(product: product, quantity: quantity)
+        showingPopup = true
     }
     
     func splitText(_ text: String) -> String {

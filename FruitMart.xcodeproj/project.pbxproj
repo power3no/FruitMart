@@ -17,6 +17,8 @@
 		21B2C5262553B5E900C6B2DC /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B2C5252553B5E900C6B2DC /* QuantitySelector.swift */; };
 		21B2C5292553D29500C6B2DC /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B2C5282553D29500C6B2DC /* FavoriteButton.swift */; };
 		21B2C52C2553DCDA00C6B2DC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B2C52B2553DCDA00C6B2DC /* Order.swift */; };
+		BF05CED8255660C4000039FF /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05CED7255660C4000039FF /* Popup.swift */; };
+		BF0DF58B2556911B002BC2A5 /* OrderCompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0DF58A2556911B002BC2A5 /* OrderCompletedMessage.swift */; };
 		BF348A0F254D69A400B9AF98 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF348A0E254D69A400B9AF98 /* ProductRow.swift */; };
 		BF348A14254D7D6700B9AF98 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF348A13254D7D6700B9AF98 /* ColorExtension.swift */; };
 		BF348A1B254D8E6200B9AF98 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF348A1A254D8E6200B9AF98 /* Product.swift */; };
@@ -38,6 +40,8 @@
 		21B2C5252553B5E900C6B2DC /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		21B2C5282553D29500C6B2DC /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		21B2C52B2553DCDA00C6B2DC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		BF05CED7255660C4000039FF /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		BF0DF58A2556911B002BC2A5 /* OrderCompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompletedMessage.swift; sourceTree = "<group>"; };
 		BF348A0E254D69A400B9AF98 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		BF348A13254D7D6700B9AF98 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		BF348A1A254D8E6200B9AF98 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -79,9 +83,18 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		BF05CED6255660A5000039FF /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				BF05CED7255660C4000039FF /* Popup.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
 		BF348A11254D7D4400B9AF98 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				BF05CED6255660A5000039FF /* ViewModifier */,
 				2134600825555E6300C6A5FB /* CustomStyle */,
 				218425E42552CDD90053A8BB /* CustomView */,
 				BF348A12254D7D4D00B9AF98 /* Extension */,
@@ -179,6 +192,7 @@
 				217AE6C8255251A1002A31C2 /* ProductDetailView.swift */,
 				21B2C5252553B5E900C6B2DC /* QuantitySelector.swift */,
 				21B2C5282553D29500C6B2DC /* FavoriteButton.swift */,
+				BF0DF58A2556911B002BC2A5 /* OrderCompletedMessage.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -266,11 +280,13 @@
 				BF65578E254D36CF00804F9F /* Home.swift in Sources */,
 				BF65578C254D36CF00804F9F /* FruitMartApp.swift in Sources */,
 				BF348A1B254D8E6200B9AF98 /* Product.swift in Sources */,
+				BF0DF58B2556911B002BC2A5 /* OrderCompletedMessage.swift in Sources */,
 				213460032555563800C6A5FB /* Symbol.swift in Sources */,
 				BF348A0F254D69A400B9AF98 /* ProductRow.swift in Sources */,
 				21B2C52C2553DCDA00C6B2DC /* Order.swift in Sources */,
 				213460062555582400C6A5FB /* ResizedImage.swift in Sources */,
 				BF348A14254D7D6700B9AF98 /* ColorExtension.swift in Sources */,
+				BF05CED8255660C4000039FF /* Popup.swift in Sources */,
 				21B2C5262553B5E900C6B2DC /* QuantitySelector.swift in Sources */,
 				218425E62552CDF00053A8BB /* Preview.swift in Sources */,
 				21B2C5292553D29500C6B2DC /* FavoriteButton.swift in Sources */,
