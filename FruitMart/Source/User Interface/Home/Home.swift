@@ -20,8 +20,8 @@ struct Home: View {
                 darkerDivider
                 productList
             }
-            
         }
+        .popupOverContext(item: $quickOrder, content: popupMessage(product:))
     }
     
     func popupMessage(product: Product) -> some View {
@@ -55,9 +55,6 @@ private extension Home {
                 ProductRow(product: product, quickOrder: self.$quickOrder)
             }
         }
-        .buttonStyle(PlainButtonStyle())
-        .popupOverContext(item: $quickOrder, content: popupMessage(product:))
-        .navigationTitle("과일마트")
     }
     
     var showFavorite: Bool {
