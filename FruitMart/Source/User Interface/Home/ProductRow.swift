@@ -51,7 +51,7 @@ private extension ProductRow {
     var footerView: some View {
         HStack() {
             Text("￦").font(.footnote)
-                + Text("\(product.price)").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                + Text("\(product.price)").font(.headline)
             
             Spacer()
             

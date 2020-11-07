@@ -11,8 +11,21 @@ import SwiftUI
 struct FruitMartApp: App {
     var body: some Scene {
         WindowGroup {
-            Home().environmentObject(Store())
+            Home()
+                .accentColor(Color.primary)
+                .environmentObject(Store())
+                
                 
         }
     }
+    
+    private func configureAppearance() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .foregroundColor: UIColor(named: "peach")!
+        ]
+        UINavigationBar.appearance().titleTextAttributes = [
+            .foregroundColor: UIColor(named: "peach")!
+        ]
+    }
+    
 }

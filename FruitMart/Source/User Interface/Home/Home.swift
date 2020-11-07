@@ -10,16 +10,17 @@ import SwiftUI
 struct Home: View {
     @EnvironmentObject private var store: Store
     @State private var quickOrder: Product?
+    @State private var showingFavoriteImage: Bool = true
     var body: some View {
         NavigationView{
-            List(store.products) { product in
-                NavigationLink(destination: ProductDetailView(product: product)) {
-                    ProductRow(product: product, quickOrder: self.$quickOrder)
+            VStack {
+                if showFavorite {
+                    favoriteProducts
                 }
+                darkerDivider
+                productList
             }
-            .buttonStyle(PlainButtonStyle())
-            .popupOverContext(item: $quickOrder, content: popupMessage(product:))
-            .navigationTitle("과일마트")
+            
         }
     }
     
@@ -33,6 +34,36 @@ struct Home: View {
             OrderCompletedMessage()
         }
     }
+}
+
+private extension Home {
+    var favoriteProducts: some View {
+        FavoriteProductScrollView(showingImage: $showingFavoriteImage)
+            .padding(.top, 24)
+            .padding(.bottom, 8)
+    }
+    
+    var darkerDivider: some View {
+        Color.primary
+            .opacity(0.3)
+            .frame(maxWidth: .infinity, maxHeight: 1)
+    }
+    
+    var productList: some View {
+        List(store.products) { product in
+            NavigationLink(destination: ProductDetailView(product: product)) {
+                ProductRow(product: product, quickOrder: self.$quickOrder)
+            }
+        }
+        .buttonStyle(PlainButtonStyle())
+        .popupOverContext(item: $quickOrder, content: popupMessage(product:))
+        .navigationTitle("과일마트")
+    }
+    
+    var showFavorite: Bool {
+        !store.products.filter ({ $0.isFavorite }).isEmpty
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
