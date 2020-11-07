@@ -24,6 +24,7 @@ struct Home: View {
                 darkerDivider
                 productList
             }
+            .navigationBarTitle("과일마트")
         }
         .popupOverContext(item: $quickOrder, content: popupMessage(product:))
     }
