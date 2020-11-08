@@ -25,6 +25,7 @@ struct MainTapView: View {
         }
         .accentColor(.peach)
         .edgesIgnoringSafeArea(.top)
+//        .statusBar(hidden: false)
     }
 }
 
@@ -47,7 +48,7 @@ private extension MainTapView {
     }
     
     var recipe: some View {
-        Text("레시피")
+        RecipeView()
             .tag(Tabs.recipe)
             .tabItem(image: "book", text: "레시피")
     }

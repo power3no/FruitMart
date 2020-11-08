@@ -24,6 +24,8 @@
 		BF348A0F254D69A400B9AF98 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF348A0E254D69A400B9AF98 /* ProductRow.swift */; };
 		BF348A14254D7D6700B9AF98 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF348A13254D7D6700B9AF98 /* ColorExtension.swift */; };
 		BF348A1B254D8E6200B9AF98 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF348A1A254D8E6200B9AF98 /* Product.swift */; };
+		BF4063762557C54F002BE045 /* Resipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4063752557C54F002BE045 /* Resipe.swift */; };
+		BF40637A2557C5C8002BE045 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4063792557C5C8002BE045 /* RecipeView.swift */; };
 		BF65578C254D36CF00804F9F /* FruitMartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65578B254D36CF00804F9F /* FruitMartApp.swift */; };
 		BF65578E254D36CF00804F9F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65578D254D36CF00804F9F /* Home.swift */; };
 		BF655793254D36D200804F9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF655792254D36D200804F9F /* Preview Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		BF348A0E254D69A400B9AF98 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		BF348A13254D7D6700B9AF98 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		BF348A1A254D8E6200B9AF98 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		BF4063752557C54F002BE045 /* Resipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resipe.swift; sourceTree = "<group>"; };
+		BF4063792557C5C8002BE045 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		BF655788254D36CF00804F9F /* FruitMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF65578B254D36CF00804F9F /* FruitMartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitMartApp.swift; sourceTree = "<group>"; };
 		BF65578D254D36CF00804F9F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 		BF348A17254D8E2000B9AF98 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				BF4063782557C5AF002BE045 /* Recipe */,
 				BF6557B6254D475100804F9F /* Home */,
 				BF0DF5CD2556D5B7002BC2A5 /* MainTapView.swift */,
 			);
@@ -130,8 +135,17 @@
 				BF348A1A254D8E6200B9AF98 /* Product.swift */,
 				217AE6C5255249D1002A31C2 /* Store.swift */,
 				21B2C52B2553DCDA00C6B2DC /* Order.swift */,
+				BF4063752557C54F002BE045 /* Resipe.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BF4063782557C5AF002BE045 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				BF4063792557C5C8002BE045 /* RecipeView.swift */,
+			);
+			path = Recipe;
 			sourceTree = "<group>";
 		};
 		BF65577F254D36CF00804F9F = {
@@ -284,10 +298,12 @@
 				217AE6C6255249D1002A31C2 /* Store.swift in Sources */,
 				217AE6C9255251A1002A31C2 /* ProductDetailView.swift in Sources */,
 				BF65578E254D36CF00804F9F /* Home.swift in Sources */,
+				BF40637A2557C5C8002BE045 /* RecipeView.swift in Sources */,
 				BF65578C254D36CF00804F9F /* FruitMartApp.swift in Sources */,
 				BF348A1B254D8E6200B9AF98 /* Product.swift in Sources */,
 				BF0DF58B2556911B002BC2A5 /* OrderCompletedMessage.swift in Sources */,
 				213460032555563800C6A5FB /* Symbol.swift in Sources */,
+				BF4063762557C54F002BE045 /* Resipe.swift in Sources */,
 				BF0DF5C72556BFE2002BC2A5 /* FavoriteProductScrollView.swift in Sources */,
 				BF348A0F254D69A400B9AF98 /* ProductRow.swift in Sources */,
 				21B2C52C2553DCDA00C6B2DC /* Order.swift in Sources */,
