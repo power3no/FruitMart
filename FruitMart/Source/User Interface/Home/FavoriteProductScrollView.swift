@@ -35,6 +35,7 @@ private extension FavoriteProductScrollView {
         .padding(.bottom, 8)
         .onTapGesture {
             self.showingImage.toggle()
+            withAnimation { self.showingImage.toggle() }
         }
     }
     
