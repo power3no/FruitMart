@@ -17,6 +17,9 @@
 		21B2C5262553B5E900C6B2DC /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B2C5252553B5E900C6B2DC /* QuantitySelector.swift */; };
 		21B2C5292553D29500C6B2DC /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B2C5282553D29500C6B2DC /* FavoriteButton.swift */; };
 		21B2C52C2553DCDA00C6B2DC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B2C52B2553DCDA00C6B2DC /* Order.swift */; };
+		21F02144255BF27B0084A358 /* MyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F02143255BF27B0084A358 /* MyPage.swift */; };
+		21F02148255BF4490084A358 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F02147255BF4490084A358 /* OrderListView.swift */; };
+		21F0214B255BF52E0084A358 /* OrderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0214A255BF52E0084A358 /* OrderRow.swift */; };
 		BF05CED8255660C4000039FF /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05CED7255660C4000039FF /* Popup.swift */; };
 		BF0DF58B2556911B002BC2A5 /* OrderCompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0DF58A2556911B002BC2A5 /* OrderCompletedMessage.swift */; };
 		BF0DF5C72556BFE2002BC2A5 /* FavoriteProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0DF5C62556BFE2002BC2A5 /* FavoriteProductScrollView.swift */; };
@@ -46,6 +49,9 @@
 		21B2C5252553B5E900C6B2DC /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		21B2C5282553D29500C6B2DC /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		21B2C52B2553DCDA00C6B2DC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		21F02143255BF27B0084A358 /* MyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPage.swift; sourceTree = "<group>"; };
+		21F02147255BF4490084A358 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		21F0214A255BF52E0084A358 /* OrderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRow.swift; sourceTree = "<group>"; };
 		BF05CED7255660C4000039FF /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		BF0DF58A2556911B002BC2A5 /* OrderCompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompletedMessage.swift; sourceTree = "<group>"; };
 		BF0DF5C62556BFE2002BC2A5 /* FavoriteProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductScrollView.swift; sourceTree = "<group>"; };
@@ -95,6 +101,16 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		21F02142255BF26B0084A358 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				21F02143255BF27B0084A358 /* MyPage.swift */,
+				21F02147255BF4490084A358 /* OrderListView.swift */,
+				21F0214A255BF52E0084A358 /* OrderRow.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		BF05CED6255660A5000039FF /* ViewModifier */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +142,7 @@
 		BF348A17254D8E2000B9AF98 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				21F02142255BF26B0084A358 /* MyPage */,
 				BF4063B42557F78D002BE045 /* ImageGallery */,
 				BF4063782557C5AF002BE045 /* Recipe */,
 				BF6557B6254D475100804F9F /* Home */,
@@ -311,6 +328,7 @@
 			files = (
 				217AE6C6255249D1002A31C2 /* Store.swift in Sources */,
 				BF4063BA2557FFB4002BE045 /* ImageGallery.swift in Sources */,
+				21F02144255BF27B0084A358 /* MyPage.swift in Sources */,
 				217AE6C9255251A1002A31C2 /* ProductDetailView.swift in Sources */,
 				BF65578E254D36CF00804F9F /* Home.swift in Sources */,
 				BF40637A2557C5C8002BE045 /* RecipeView.swift in Sources */,
@@ -318,6 +336,7 @@
 				BF65578C254D36CF00804F9F /* FruitMartApp.swift in Sources */,
 				BF348A1B254D8E6200B9AF98 /* Product.swift in Sources */,
 				BF0DF58B2556911B002BC2A5 /* OrderCompletedMessage.swift in Sources */,
+				21F02148255BF4490084A358 /* OrderListView.swift in Sources */,
 				213460032555563800C6A5FB /* Symbol.swift in Sources */,
 				BF4063762557C54F002BE045 /* Resipe.swift in Sources */,
 				BF0DF5C72556BFE2002BC2A5 /* FavoriteProductScrollView.swift in Sources */,
@@ -332,6 +351,7 @@
 				21B2C5292553D29500C6B2DC /* FavoriteButton.swift in Sources */,
 				2134600A25555E8300C6A5FB /* ShrinkButtonStyle.swift in Sources */,
 				218E811E254FC1FB0020DA54 /* BundleExtension.swift in Sources */,
+				21F0214B255BF52E0084A358 /* OrderRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

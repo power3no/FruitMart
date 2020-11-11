@@ -26,6 +26,9 @@ struct ProductRow: View {
         .opacity(willAppear ? 1 : 0)
         .animation(.easeInOut(duration: 0.4))
         .onAppear { self.willAppear = true }
+        .contextMenu {
+            contextMenu
+        }
     }
 }
 
@@ -69,6 +72,19 @@ private extension ProductRow {
     func orderProduct() {
         quickOrder = product
         store.placeOrder(product: product, quantity: 1)
+    }
+    
+    var contextMenu: some View {
+        VStack {
+            Button(action: { self.toggleFavorite() }) {
+                Text("Toggle Favorite")
+                Symbol(self.product.isFavorite ? "heart.fill" : "heart")
+            }
+        }
+    }
+    
+    func toggleFavorite() {
+        store.toggleFavorite(of: product)
     }
 }
 
